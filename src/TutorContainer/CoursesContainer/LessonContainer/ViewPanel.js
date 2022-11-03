@@ -18,7 +18,7 @@ const ViewPanel = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `/lessons/one/${lessonId}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/lessons/one/${lessonId}`,
           {
             withCredentials: true,
           }
@@ -32,7 +32,7 @@ const ViewPanel = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `/tasks/${lessonId}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/tasks/${lessonId}`,
           {
             withCredentials: true,
           }

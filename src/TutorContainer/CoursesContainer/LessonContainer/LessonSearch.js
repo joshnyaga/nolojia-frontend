@@ -17,7 +17,7 @@ const LessonSearch = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `/lessons/search/${courseId}${query}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/lessons/search/${courseId}${query}`,
           {
             withCredentials: true,
           }

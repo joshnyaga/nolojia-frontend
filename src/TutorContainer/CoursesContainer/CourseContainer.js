@@ -16,7 +16,7 @@ const CourseContainer = () => {
       setLoading(true);
       try {
         const res = await axios.get(
-          "/courses/tutor",
+          "https://nolojia.herokuapp.com/api/nolojia/v1/courses/tutor",
           {
             withCredentials: true,
           }

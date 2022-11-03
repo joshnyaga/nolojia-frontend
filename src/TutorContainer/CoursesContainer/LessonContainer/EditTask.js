@@ -13,7 +13,7 @@ const EditTask = ({ setOpen, taskId, task }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `/tasks/${taskId}`,
+        `https://nolojia.herokuapp.com/api/nolojia/v1/tasks/${taskId}`,
         { ...input },
         { withCredentials: true }
       );

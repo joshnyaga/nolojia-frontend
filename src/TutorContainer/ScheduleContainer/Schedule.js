@@ -13,7 +13,7 @@ const Schedule = () => {
   useEffect(() => {
     const fetchSchedule = async () => {
       const res = await axios.get(
-        "/schedules",
+        "https://nolojia.herokuapp.com/api/nolojia/v1/schedules",
         { withCredentials: true }
       );
       setSchedules(res.data);
@@ -69,7 +69,7 @@ const Schedule = () => {
                   onClick={async () => {
                     try {
                       await axios.delete(
-                        `/schedules/`,
+                        `https://nolojia.herokuapp.com/api/nolojia/v1/schedules/`,
                         {
                           withCredentials: true,
                         }

@@ -104,7 +104,7 @@ const Dashboard = () => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `/users/${currentUser._id}`,
+        `https://nolojia.herokuapp.com/api/nolojia/v1/users/${currentUser._id}`,
         {
           ...input,
         },
@@ -117,7 +117,7 @@ const Dashboard = () => {
     const fetchCourses = async () => {
       try {
         const res = await axios.get(
-          "/courses/tutor",
+          "https://nolojia.herokuapp.com/api/nolojia/v1/courses/tutor",
           {
             withCredentials: true,
           }

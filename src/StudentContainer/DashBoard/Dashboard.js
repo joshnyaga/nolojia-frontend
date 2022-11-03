@@ -13,7 +13,7 @@ const Dashboard = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          "/courses/",
+          "https://nolojia.herokuapp.com/api/nolojia/v1/courses/",
           {
             withCredentials: true,
           }
@@ -37,7 +37,7 @@ const Dashboard = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          "/courses/students",
+          "https://nolojia.herokuapp.com/api/nolojia/v1/courses/students",
           {
             withCredentials: true,
           }

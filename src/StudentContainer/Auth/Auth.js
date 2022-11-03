@@ -45,7 +45,7 @@ const Auth = () => {
       try {
         dispatch(loginStart());
         const res = await axios.post(
-          "/auth/signin",
+          "https://nolojia.herokuapp.com/api/nolojia/v1/auth/signin",
           {
             ...inputLogin,
           },
@@ -74,7 +74,7 @@ const Auth = () => {
     const register = async () => {
       try {
         const res = await axios.post(
-          "/auth/signup",
+          "https://nolojia.herokuapp.com/api/nolojia/v1/auth/signup",
           {
             ...inputRegister,
           },

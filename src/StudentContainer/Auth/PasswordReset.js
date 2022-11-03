@@ -15,7 +15,7 @@ const PasswordReset = () => {
   useEffect(() => {
     const verifyUrl = async () => {
       try {
-        const url = `/auth/verify/${id}/${token}`;
+        const url = `https://nolojia.herokuapp.com/api/nolojia/v1/auth/verify/${id}/${token}`;
         const { data } = await axios.get(url);
         console.log(data);
         setValidUrl(true);
@@ -29,7 +29,7 @@ const PasswordReset = () => {
   const handleSubmit = async () => {
     try {
       const { data } = await axios.post(
-        `http://localhost:3001/api/nolojia/v1/auth/reset/${id}/${token}`,
+        `https://nolojia.herokuapp.com/api/nolojia/v1/auth/reset/${id}/${token}`,
         { password: password },
         { withCredentials: true }
       );

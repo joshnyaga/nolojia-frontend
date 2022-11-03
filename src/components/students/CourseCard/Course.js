@@ -14,7 +14,7 @@ const Course = (course) => {
     try {
       if (course.course.price == 0) {
         const res = await axios.put(
-          `/users/enroll/${course.course._id}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/users/enroll/${course.course._id}`,
           {
             name: "key",
           },

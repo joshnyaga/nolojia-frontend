@@ -14,7 +14,7 @@ const CourseCard = ({ course }) => {
   const handleDelete = async () => {
     try {
       const res = await axios.delete(
-        `/courses/${course._id}`,
+        `https://nolojia.herokuapp.com/api/nolojia/v1/courses/${course._id}`,
         { withCredentials: true }
       );
       const reference = ref(storage, course.imgName);

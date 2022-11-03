@@ -13,7 +13,7 @@ const AddSchedule = ({ setOpen }) => {
     e.preventDefault();
     console.log(input);
     const res = await axios.post(
-      `/schedules`,
+      `https://nolojia.herokuapp.com/api/nolojia/v1/schedules`,
       { ...input },
       { withCredentials: true }
     );

@@ -19,7 +19,7 @@ const LessonPanel = (lessonProp) => {
     const fetchLesson = async () => {
       try {
         const res = await axios.get(
-          `/lessons/first/${courseId}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/lessons/first/${courseId}`,
           { withCredentials: true }
         );
         setLesson(res.data);
@@ -28,13 +28,13 @@ const LessonPanel = (lessonProp) => {
     const fetchCourse = async () => {
       try {
         const res = await axios.get(
-          `/courses/tutor/${courseId}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/courses/tutor/${courseId}`,
           { withCredentials: true }
         );
         setTutorId(res.data.userId);
 
         const user = await axios.get(
-          `/users/${res.data.userId}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/users/${res.data.userId}`,
           { withCredentials: true }
         );
         setTutor(user.data);
@@ -43,7 +43,7 @@ const LessonPanel = (lessonProp) => {
     const fetchLessons = async () => {
       try {
         const res = await axios.get(
-          `/lessons/${courseId}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/lessons/${courseId}`,
           { withCredentials: true }
         );
         setLessons(res.data);
@@ -53,7 +53,7 @@ const LessonPanel = (lessonProp) => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `/tasks/${lessonId}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/tasks/${lessonId}`,
           {
             withCredentials: true,
           }
@@ -75,7 +75,7 @@ const LessonPanel = (lessonProp) => {
     const fetchSingleLesson = async () => {
       try {
         const res = await axios.get(
-          `/lessons/one/${lessonId}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/lessons/one/${lessonId}`,
           { withCredentials: true }
         );
         setLesson(res.data);

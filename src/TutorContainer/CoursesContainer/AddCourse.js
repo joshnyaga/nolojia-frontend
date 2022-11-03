@@ -90,7 +90,7 @@ const AddCourse = ({ setOpen }) => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "/courses/",
+        "https://nolojia.herokuapp.com/api/nolojia/v1/courses/",
         {
           ...input,
         },

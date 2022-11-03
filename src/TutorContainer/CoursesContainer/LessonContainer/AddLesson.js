@@ -103,7 +103,7 @@ const AddLesson = ({ setOpen }) => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `/lessons/${courseId}`,
+        `https://nolojia.herokuapp.com/api/nolojia/v1/lessons/${courseId}`,
         {
           ...input,
         },

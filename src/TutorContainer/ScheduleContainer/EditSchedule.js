@@ -14,7 +14,7 @@ const EditSchedule = ({ setOpenEdit, scheduleId }) => {
   useEffect(() => {
     const fetchSchedule = async () => {
       const res = await axios.get(
-        `/schedules/${scheduleId}`,
+        `https://nolojia.herokuapp.com/api/nolojia/v1/schedules/${scheduleId}`,
         { withCredentials: true }
       );
       setSchedule(res.data);
@@ -25,7 +25,7 @@ const EditSchedule = ({ setOpenEdit, scheduleId }) => {
     e.preventDefault();
 
     const res = await axios.put(
-      `/schedules/${scheduleId}`,
+      `https://nolojia.herokuapp.com/api/nolojia/v1/schedules/${scheduleId}`,
       { ...input },
       { withCredentials: true }
     );

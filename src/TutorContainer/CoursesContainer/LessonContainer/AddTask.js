@@ -13,7 +13,7 @@ const AddTask = ({ setOpen, lessonId }) => {
     e.preventDefault();
 
     const res = await axios.post(
-      `/tasks/${lessonId}`,
+      `https://nolojia.herokuapp.com/api/nolojia/v1/tasks/${lessonId}`,
       { ...input },
       { withCredentials: true }
     );

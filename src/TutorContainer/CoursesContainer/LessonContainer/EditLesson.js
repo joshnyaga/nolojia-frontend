@@ -104,7 +104,7 @@ const EditLesson = ({ setOpen, lessonId }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `/lessons/${lesson._id}`,
+        `https://nolojia.herokuapp.com/api/nolojia/v1/lessons/${lesson._id}`,
         {
           ...input,
         },
@@ -125,7 +125,7 @@ const EditLesson = ({ setOpen, lessonId }) => {
     const fetchLesson = async () => {
       try {
         const res = await axios.get(
-          `/lessons/one/${lessonId}`,
+          `https://nolojia.herokuapp.com/api/nolojia/v1/lessons/one/${lessonId}`,
           { withCredentials: true }
         );
         setLesson(res.data);

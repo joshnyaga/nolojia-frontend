@@ -22,7 +22,7 @@ const Nav = () => {
     const checkLogin = async () => {
       try {
         const res = await axios.get(
-          "/auth/loggedin",
+          "https://nolojia.herokuapp.com/api/nolojia/v1/auth/loggedin",
           { withCredentials: true }
         );
       } catch (error) {

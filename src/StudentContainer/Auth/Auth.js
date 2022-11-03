@@ -137,11 +137,11 @@ const Auth = () => {
               <i className="fa fa-user"></i>
               <input
                 type="text"
-                name="name"
+                name="email"
                 required
                 onChange={handleChangeLogin}
                 autoComplete="off"
-                placeholder="Username"
+                placeholder="Email"
                 onBlur={(e) => {
                   setFocusLoginName(true);
                 }}

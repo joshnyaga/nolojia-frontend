@@ -14,6 +14,7 @@ const LessonPanel = (lessonProp) => {
   const [loading, setLoading] = useState(false);
   const courseId = useLocation().pathname.split("/")[2];
   const lessonId = useLocation().pathname.split("/")[3];
+  console.log(tutor, tutorId, loading)
   useEffect(() => {
     const fetchLesson = async () => {
       try {
@@ -69,7 +70,7 @@ const LessonPanel = (lessonProp) => {
     fetchCourse();
     fetchLessons();
     fetchTasks();
-  }, [courseId, lessonId]);
+  }, [courseId, lessonId, tasks]);
   useEffect(() => {
     const fetchSingleLesson = async () => {
       try {
@@ -94,7 +95,7 @@ const LessonPanel = (lessonProp) => {
           </div>
           <p className="desc">{lesson.desc}</p>
           <div className="heading-center">Assignments</div>
-          {tasks != "No tasks found" ? (
+          {tasks !== "No tasks found" ? (
             <div className="task-container">
               {tasks.map((task) => (
                 <Task key={task._id} task={task} />

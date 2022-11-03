@@ -26,7 +26,7 @@ const Dashboard = () => {
         setAllCourses(newArr);
         setLoading(false);
       } catch (error) {
-        console.log(error.response.data.message);
+        console.log(error);
         setLoading(false);
       }
     };
@@ -49,7 +49,7 @@ const Dashboard = () => {
         setLoading(false);
         setType("yours");
       } catch (error) {
-        console.log(error.response.data.message);
+        console.log(error);
         setLoading(false);
       }
     };

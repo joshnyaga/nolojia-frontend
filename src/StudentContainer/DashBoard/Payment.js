@@ -3,7 +3,7 @@ import { FaRegWindowClose } from "react-icons/fa";
 
 import "./dashboard.css";
 const Payment = ({ setOpen, title, price }) => {
-  const handleChange = async (e) => {};
+  
   const handlePayment = async () => {};
   return (
     <div className="modal">

@@ -2,9 +2,6 @@ import React from "react";
 import CoursePanel from "./CoursePanel";
 import LessonPanel from "./LessonPanel";
 import "./courses.css";
-import Navbar from "../../components/students/Nav/Navbar";
-import Sidebar from "../../components/students/SideBar/Sidebar";
-
 const Courses = () => {
   return (
     <>

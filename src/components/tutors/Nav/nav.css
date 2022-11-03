@@ -1,0 +1,45 @@
+.nav--bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 5rem 0rem 31rem;
+  gap: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  right: 0;
+  left: 17rem;
+  height: 5rem;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.search--bar {
+  flex: 0 1 30rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.search--input {
+  border: 1px #ebebeb solid;
+  border-radius: 30px;
+  padding: 1rem 1rem;
+  width: 70%;
+}
+.profile-details {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.profile-details img {
+  width: 80px;
+  border-radius: 50%;
+}
+.profile--name {
+  font-size: 1rem;
+  color: var(--blue);
+}
+.profile-details svg {
+  color: var(--blue);
+}

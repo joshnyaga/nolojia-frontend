@@ -1,0 +1,66 @@
+.header-dashboard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  flex-flow: column;
+  padding: 0.8rem 2rem;
+  width: 17rem;
+}
+
+.header-dashboard .logo {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.header-dashboard .logo span {
+  text-transform: lowercase;
+  color: var(--orange-light);
+}
+
+.header-dashboard .navbar a {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--white);
+  margin: 2rem 0;
+}
+.header-dashboard .navbar a:hover {
+  font-weight: 600;
+}
+.header-dashboard .navbar a .active {
+  font-weight: 600;
+}
+.header-dashboard .navbar .active::before {
+  content: "-";
+  padding-left: 2rem;
+}
+.header-dashboard .navbar .active {
+  font-weight: 600;
+}
+.header-dashboard .follow {
+  color: #fff;
+  color: var(--white);
+}
+.header-dashboard .follow a:hover {
+  color: var(--white);
+}
+#menu-bars {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10000;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}

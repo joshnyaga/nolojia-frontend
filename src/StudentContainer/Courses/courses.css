@@ -1,0 +1,85 @@
+/* make div scrollable */
+.course-panel {
+  overflow-y: auto;
+}
+.lesson-panel {
+  background-color: var(--white-2);
+  overflow-y: auto;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.course-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.course-search input {
+  border-bottom: 1px solid var(--blue);
+  padding: 0.4rem 0;
+  opacity: 0.7;
+}
+.info-lessons {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.info-lessons .title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.desc {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  padding: 1rem 0;
+}
+.tutor-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: wrap;
+}
+.tutor-details img {
+  max-width: 70px;
+  border-radius: 50%;
+}
+.tutor-details .tutor-name h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.tutor-name p {
+  opacity: 0.7;
+}
+.course-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  padding: 1rem;
+  padding-left: 10rem;
+  padding-top: 5rem;
+}
+.course-panel {
+  flex: 1 1 10rem;
+  padding: 0 1rem;
+}
+.lesson-panel {
+  flex: 1 1 30rem;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+}
+.video-container video {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.middle {
+  width: 200px;
+  display: block;
+  margin: 5rem auto;
+  position: relative;
+}

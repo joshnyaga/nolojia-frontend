@@ -1,0 +1,26 @@
+.lesson-card-tutor {
+  -moz-box-shadow: 1px 7px 17px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 7px 17px -3px rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.lesson-card-tutor:hover {
+  border: 2px solid var(--blue);
+}
+.title-lesson-tutor {
+  font-weight: 600;
+}
+.desc-lesson-tutor {
+  font-size: 0.7rem;
+}
+.btns-lesson-tutor {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}

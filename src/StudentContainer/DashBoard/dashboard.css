@@ -1,0 +1,16 @@
+.dash-cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid var(--blue);
+}
+.strong {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.payment-info {
+  text-align: center;
+}

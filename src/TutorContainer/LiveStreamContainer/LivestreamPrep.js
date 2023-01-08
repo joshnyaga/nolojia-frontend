@@ -8,7 +8,7 @@ const LivestreamPrep = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       const res = await axios.get(
-        "https://nolojia.herokuapp.com/api/nolojia/v1/rooms/",
+        "https://nolojia-backend.onrender.com/api/nolojia/v1/rooms/",
         { withCredentials: true }
       );
       setRooms(res.data);
@@ -39,7 +39,7 @@ const LivestreamPrep = () => {
                     <button
                       onClick={async () => {
                         await axios.put(
-                          `https://nolojia.herokuapp.com/api/nolojia/v1/rooms/${room._id}`,
+                          `https://nolojia-backend.onrender.com/api/nolojia/v1/rooms/${room._id}`,
                           { status: "inactive" },
                           { withCredentials: true }
                         );
@@ -62,7 +62,7 @@ const LivestreamPrep = () => {
                   <button
                     onClick={async () => {
                       await axios.put(
-                        `https://nolojia.herokuapp.com/api/nolojia/v1/rooms/${room._id}`,
+                        `https://nolojia-backend.onrender.com/api/nolojia/v1/rooms/${room._id}`,
                         { status: "active" },
                         { withCredentials: true }
                       );

@@ -10,7 +10,7 @@ const EmailVerify = () => {
   useEffect(() => {
     const verifyEmailUrl = async () => {
       try {
-        const url = `https://nolojia.herokuapp.com/api/nolojia/v1/auth/${pathname1}/verify/${pathname2}`;
+        const url = `https://nolojia-backend.onrender.com/api/nolojia/v1/auth/${pathname1}/verify/${pathname2}`;
         const { data } = await axios.get(url, { withCredentials: true });
         console.log(data);
         setValidEmail(true);

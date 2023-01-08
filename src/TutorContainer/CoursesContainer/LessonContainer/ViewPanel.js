@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import tutor from "../../../images/tutor-pic.jpg";
-import video from "../../../images/video.webm";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { BsInfo } from "react-icons/bs";

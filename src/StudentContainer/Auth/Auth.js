@@ -45,7 +45,7 @@ const Auth = () => {
       try {
         dispatch(loginStart());
         const res = await axios.post(
-          "/api/nolojia/v1/auth/signin",
+          "https://nolojia-backend.onrender.com/api/nolojia/v1/auth/signin",
           {
             ...inputLogin,
           },

@@ -16,7 +16,7 @@ const Meeting = () => {
     const domain = "https://joshkish.daily.co/";
 
     axios
-      .get(`https://nolojia-backend.onrender.com/api/nolojia/v1/rooms/video-call/${id}`, {
+      .get(`/api/nolojia/v1/rooms/video-call/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

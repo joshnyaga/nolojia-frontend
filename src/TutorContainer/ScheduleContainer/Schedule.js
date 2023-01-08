@@ -13,14 +13,14 @@ const Schedule = () => {
   useEffect(() => {
     const fetchSchedule = async () => {
       const res = await axios.get(
-        "https://nolojia-backend.onrender.com/api/nolojia/v1/schedules",
+        "/api/nolojia/v1/schedules",
         { withCredentials: true }
       );
       setSchedules(res.data);
     };
     fetchSchedule();
   }, []);
-
+ //
   return (
     <section className="content-tutor">
       <br />
@@ -69,7 +69,7 @@ const Schedule = () => {
                   onClick={async () => {
                     try {
                       await axios.delete(
-                        `https://nolojia-backend.onrender.com/api/nolojia/v1/schedules/`,
+                        `/api/nolojia/v1/schedules/`,
                         {
                           withCredentials: true,
                         }

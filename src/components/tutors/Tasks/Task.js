@@ -9,7 +9,7 @@ const Task = ({ task }) => {
   const currentUser = useSelector((state) => state.currentUser);
   const handleDelete = async () => {
     await axios.delete(
-      `https://nolojia-backend.onrender.com/api/nolojia/v1/tasks/${task._id}`,
+      `/api/nolojia/v1/tasks/${task._id}`,
       { withCredentials: true }
     );
 

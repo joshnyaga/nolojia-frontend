@@ -17,7 +17,7 @@ const LessonSearch = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `https://nolojia-backend.onrender.com/api/nolojia/v1/lessons/search/${courseId}${query}`,
+          `/api/nolojia/v1/lessons/search/${courseId}${query}`,
           {
             withCredentials: true,
           }

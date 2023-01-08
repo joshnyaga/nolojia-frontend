@@ -17,7 +17,7 @@ const LessonPanel = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `https://nolojia-backend.onrender.com/api/nolojia/v1/lessons/${courseId}`,
+          `/api/nolojia/v1/lessons/${courseId}`,
           {
             withCredentials: true,
           }

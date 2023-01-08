@@ -9,7 +9,7 @@ const SubmitForm = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       const res = await axios.get(
-        "https://nolojia-backend.onrender.com/api/nolojia/v1/courses/students",
+        "/api/nolojia/v1/courses/students",
         { withCredentials: true }
       );
       setCourses(res.data);
@@ -21,7 +21,7 @@ const SubmitForm = () => {
     console.log(selectCourse);
     const fetchLessons = async () => {
       const res = await axios.get(
-        `https://nolojia-backend.onrender.com/api/nolojia/v1/lessons/${e.target.value}`,
+        `/api/nolojia/v1/lessons/${e.target.value}`,
         { withCredentials: true }
       );
       setLessons(res.data);
@@ -32,7 +32,7 @@ const SubmitForm = () => {
     console.log(selectCourse);
     const fetchLessons = async () => {
       const res = await axios.get(
-        `https://nolojia-backend.onrender.com/api/nolojia/v1/tasks/${e.target.value}`,
+        `/api/nolojia/v1/tasks/${e.target.value}`,
         { withCredentials: true }
       );
       setTasks(res.data);

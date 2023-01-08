@@ -9,7 +9,7 @@ const ForgotPassword = () => {
   const [email, setEmail] = useState("");
   const handleSubmit = async () => {
     try {
-      const url = `https://nolojia-backend.onrender.com/api/nolojia/v1/auth/sendLink`;
+      const url = `/api/nolojia/v1/auth/sendLink`;
       const { data } = await axios.post(
         url,
         { email: email },

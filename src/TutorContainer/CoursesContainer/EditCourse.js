@@ -91,7 +91,7 @@ const EditCourse = ({ setOpen, courseId }) => {
     const fetchCourse = async () => {
       try {
         const res = await axios.get(
-          `https://nolojia-backend.onrender.com/api/nolojia/v1/courses/tutor/${courseId}`,
+          `/api/nolojia/v1/courses/tutor/${courseId}`,
           { withCredentials: true }
         );
         setCourse(res.data);
@@ -106,7 +106,7 @@ const EditCourse = ({ setOpen, courseId }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `https://nolojia-backend.onrender.com/api/nolojia/v1/courses/${courseId}`,
+        `/api/nolojia/v1/courses/${courseId}`,
         {
           ...input,
         },

@@ -14,7 +14,7 @@ const CourseCard = ({ course }) => {
   const handleDelete = async () => {
     try {
       const res = await axios.delete(
-        `https://nolojia-backend.onrender.com/api/nolojia/v1/courses/${course._id}`,
+        `/api/nolojia/v1/courses/${course._id}`,
         { withCredentials: true }
       );
       const reference = ref(storage, course.imgName);

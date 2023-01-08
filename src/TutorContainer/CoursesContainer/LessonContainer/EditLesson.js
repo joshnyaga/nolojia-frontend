@@ -104,7 +104,7 @@ const EditLesson = ({ setOpen, lessonId }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `https://nolojia-backend.onrender.com/api/nolojia/v1/lessons/${lesson._id}`,
+        `/api/nolojia/v1/lessons/${lesson._id}`,
         {
           ...input,
         },
@@ -125,7 +125,7 @@ const EditLesson = ({ setOpen, lessonId }) => {
     const fetchLesson = async () => {
       try {
         const res = await axios.get(
-          `https://nolojia-backend.onrender.com/api/nolojia/v1/lessons/one/${lessonId}`,
+          `/api/nolojia/v1/lessons/one/${lessonId}`,
           { withCredentials: true }
         );
         setLesson(res.data);

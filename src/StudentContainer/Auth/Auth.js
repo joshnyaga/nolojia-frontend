@@ -74,7 +74,7 @@ const Auth = () => {
     const register = async () => {
       try {
         const res = await axios.post(
-          "/api/nolojia/v1/auth/signup",
+          "https://nolojia-backend.onrender.com/api/nolojia/v1/auth/signup",
           {
             ...inputRegister,
           },

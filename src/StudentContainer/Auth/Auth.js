@@ -171,7 +171,9 @@ const Auth = () => {
             <Link to="/forgot-password" className="link-text">
               Forgot Password?
             </Link>
-            <Link to="/register" className="link-text">
+            <Link  onClick={() => {
+              setMenu(!menu);
+            }}  className="link-text">
               Create account
             </Link>
             <p className="social-text">Or sign in with social platform</p>

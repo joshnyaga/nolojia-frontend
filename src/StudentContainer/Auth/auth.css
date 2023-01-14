@@ -55,7 +55,9 @@ form {
   line-height: 55px;
   color: var(--white-grey);
   font-size: 1.5rem;
-  margin-right: -2rem;
+  position: absolute;
+  left: 50px;
+  top: -4px;
 }
 
 .input-field input {
@@ -106,7 +108,7 @@ form {
 .signin-signup {
   position: absolute;
   top: 50%;
-  left: 75%;
+  left: 70%;
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 1fr;
@@ -249,6 +251,7 @@ form.sign-up-form {
   font-size: 0.8rem;
   width: 250px;
   display: none;
+  margin-left: 55px;
 }
 .link-text {
   text-align: center;

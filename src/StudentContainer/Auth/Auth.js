@@ -102,7 +102,7 @@ const Auth = () => {
         .then((result) => {
           axios
             .post(
-              "api/nolojia/v1/auth/google",
+              "/api/nolojia/v1/auth/google",
               {
                 name: result.user.displayName,
                 email: result.user.email,

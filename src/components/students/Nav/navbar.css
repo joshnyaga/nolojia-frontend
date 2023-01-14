@@ -32,3 +32,8 @@
   font-size: 2rem;
   color: var(--blue);
 }
+@media(max-width: 630px){
+  .nav{
+    left: 0rem;
+  }
+}

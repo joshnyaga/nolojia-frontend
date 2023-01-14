@@ -22,6 +22,13 @@ import TSchedulePage from "./Pages/TutorPages/TSchedulePage";
 import ForgotPassword from "./StudentContainer/Auth/ForgotPassword";
 import EmailVerify from "./StudentContainer/Auth/EmailVerify";
 import PasswordReset from "./StudentContainer/Auth/PasswordReset";
+import MyPayments from "./StudentContainer/Payments/MyPayments";
+import Successful from "./StudentContainer/Payments/Successful";
+import ErrorPayments from "./StudentContainer/Payments/ErrorPayments";
+import Enroll from "./StudentContainer/Other/Enroll";
+import HelpFund from "./StudentContainer/Other/HelpFund";
+import InvalidPath from "./StudentContainer/Other/InvalidPath";
+import Landing from "./components/code/Landing";
 export default function App() {
   return (
     <BrowserRouter>
@@ -34,6 +41,9 @@ export default function App() {
           <Route path="live/*" element={<StudentLiveStream />} />
           <Route path="assignments" element={<AssignmentsPage />} />
           <Route path="challenges" element={<ChallengesPage />} />
+          <Route path="payments" element={<MyPayments />} />
+          <Route path="successful" element={<Successful />} />
+          <Route path="error" element={<ErrorPayments />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
         <Route path="/admin" element={<SideNavTutor />}>
@@ -46,6 +56,10 @@ export default function App() {
           <Route path="schedule" element={<TSchedulePage />} />
           <Route path="*" element={<TNotFound />} />
         </Route>
+        <Route path="invalidpath" element={<InvalidPath />} />
+        <Route path="helpfund/*" element={<HelpFund />} />
+        <Route path="enroll" element={<Enroll />} />
+        <Route path="code" element={<Landing />} />
         <Route path="login" element={<AuthPage />} />
         <Route path="verify/*" element={<EmailVerify />} />
         <Route path="password-reset/*" element={<PasswordReset />} />

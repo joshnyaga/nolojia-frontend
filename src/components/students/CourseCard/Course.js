@@ -48,7 +48,7 @@ const Course = (course) => {
           </div>
         </div>
 
-        <p className="level">USD. {course.course.price}</p>
+        <p className="level">KSH. {course.course.price}</p>
         {course.course.type === "all" ? (
           <button onClick={handleEnroll} className="btn">
             Enroll{" "}

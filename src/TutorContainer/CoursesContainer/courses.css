@@ -15,6 +15,10 @@
   border: 2px solid var(--blue);
   width: 50%;
 }
+.course-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
 .lesson-panel {
   flex: 1 1 30rem;
   overflow-y: scroll;

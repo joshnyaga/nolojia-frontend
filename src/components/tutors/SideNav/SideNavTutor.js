@@ -6,6 +6,7 @@ import "./sidenav.css";
 const SideNavTutor = () => {
   const pathname = useLocation().pathname.split("/")[2];
   const navigate = useNavigate();
+  let date = new Date()
   return (
     <>
       <div id="menu-bars" className="fa fa-bars"></div>
@@ -42,20 +43,9 @@ const SideNavTutor = () => {
             Livestream
           </Link>
 
-          <Link
-            className={`${pathname === "assignments" ? "active" : "link"}`}
-            to="/admin/assignment"
-          >
-            Assignments
-          </Link>
-          <Link
-            className={`${pathname === "challenges" ? "active" : "link"}`}
-            to="/assignment"
-          >
-            Challenges
-          </Link>
+
         </nav>
-        <div className="follow"> Copyright @ nolojia 2022</div>
+        <div className="follow"> Copyright @ nolojia {date.getFullYear()}</div>
       </header>
       <Nav />
       <Outlet />

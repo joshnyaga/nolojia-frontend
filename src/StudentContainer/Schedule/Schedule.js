@@ -13,6 +13,7 @@ const Schedule = () => {
         { withCredentials: true }
       );
       setSchedules(res.data);
+      console.log(res.data)
     };
     fetchSchedule();
   }, []);
@@ -31,7 +32,7 @@ const Schedule = () => {
           </tr>
         </thead>
         <tbody>
-          {schedules.map((schedule) => (
+          {schedules&&schedules.map((schedule) => (
             <tr key={schedule._id}>
               <td>{schedule.day}</td>
               <td>{schedule.startTime}</td>

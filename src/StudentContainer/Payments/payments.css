@@ -1,0 +1,43 @@
+.payment-section{
+    margin-top: 5vh;
+
+}
+.panel-contents{
+    border: 2px solid var(--blue);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.p-input{
+    border: 1px solid var(--blue) ;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: .3rem;
+    width: 60vw;
+}
+.mainbox {
+    background-color: var(--white-2);
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .code {
+    color: var(--white-grey);
+    font-size: 12rem;
+    letter-spacing: 10px;
+    font-weight: 600;
+  }
+  .error {
+    font-size: 3rem;
+    text-align: center;
+  }
+  

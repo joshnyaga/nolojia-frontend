@@ -8,10 +8,11 @@ const LivestreamPrep = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       const res = await axios.get(
-        "http://localhost:3001/api/nolojia/v1/rooms/",
+        "/api/nolojia/v1/rooms/",
         { withCredentials: true }
       );
       setRooms(res.data);
+      console.log(res.data)
     };
     fetchRooms();
   }, []);
@@ -39,7 +40,7 @@ const LivestreamPrep = () => {
                     <button
                       onClick={async () => {
                         await axios.put(
-                          `http://localhost:3001/api/nolojia/v1/rooms/${room._id}`,
+                          `/api/nolojia/v1/rooms/${room._id}`,
                           { status: "inactive" },
                           { withCredentials: true }
                         );
@@ -62,7 +63,7 @@ const LivestreamPrep = () => {
                   <button
                     onClick={async () => {
                       await axios.put(
-                        `http://localhost:3001/api/nolojia/v1/rooms/${room._id}`,
+                        `api/nolojia/v1/rooms/${room._id}`,
                         { status: "active" },
                         { withCredentials: true }
                       );

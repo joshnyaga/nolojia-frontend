@@ -4,6 +4,8 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 import "./sidenav.css";
 import { RiDashboardFill } from "react-icons/ri";
 import { SiCoursera } from "react-icons/si";
+import {FaMoneyCheckAlt} from "react-icons/fa"
+import {RiCodeBoxFill} from "react-icons/ri";
 import { AiFillSchedule } from "react-icons/ai";
 import { AiFillVideoCamera } from "react-icons/ai";
 import { FaTasks } from "react-icons/fa";
@@ -62,21 +64,21 @@ const Sidebar = () => {
             </div>
           </Link>
           <Link
-            to="/challenges"
+            to="/code"
             className={`${pathname === "challenges" ? "active" : "link"}`}
           >
             <div className="links--box">
-              <FaTasks />
-              <p className="box--title">Challenges</p>
+              <RiCodeBoxFill />
+              <p className="box--title">Live Code</p>
             </div>
           </Link>
           <Link
-            to="/assignments"
-            className={`${pathname === "assignments" ? "active" : "link"}`}
+            to="/payments"
+            className={`${pathname === "payments" ? "active" : "link"}`}
           >
             <div className="links--box">
-              <MdAssignment />
-              <p className="box--title">Assignments</p>
+              <FaMoneyCheckAlt />
+              <p className="box--title">Payments</p>
             </div>
           </Link>
         </div>

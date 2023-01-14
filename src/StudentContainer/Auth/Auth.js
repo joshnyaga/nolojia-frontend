@@ -27,7 +27,7 @@ const Auth = () => {
 
   const [focusLoginPassword, setFocusLoginPassword] = useState(false);
 
-  // handle the change of inputs
+  // handle the change of 
   const handleChangeLogin = (e) => {
     // set the inputlogin state
     setInputLogin((prev) => {
@@ -45,7 +45,7 @@ const Auth = () => {
       try {
         dispatch(loginStart());
         const res = await axios.post(
-          "https://nolojia-backend.onrender.com/api/nolojia/v1/auth/signin",
+          "api/nolojia/v1/auth/signin",
           {
             ...inputLogin,
           },
@@ -74,7 +74,7 @@ const Auth = () => {
     const register = async () => {
       try {
         const res = await axios.post(
-          "https://nolojia-backend.onrender.com/api/nolojia/v1/auth/signup",
+          "api/nolojia/v1/auth/signup",
           {
             ...inputRegister,
           },
@@ -102,7 +102,7 @@ const Auth = () => {
         .then((result) => {
           axios
             .post(
-              "/auth/google",
+              "api/nolojia/v1/auth/google",
               {
                 name: result.user.displayName,
                 email: result.user.email,

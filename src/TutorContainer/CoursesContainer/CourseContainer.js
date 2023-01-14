@@ -57,11 +57,11 @@ const CourseContainer = () => {
           <ReactLoading type="spin" color="#101050" height={200} width={75} />
         </div>
       ) : (
-        <>
+        <div className="course-cards" >
           {courses.map((course) => (
             <CourseCard key={course._id} course={course} />
           ))}
-        </>
+        </div>
       )}
 
       {open && <AddCourse setOpen={setOpen} />}

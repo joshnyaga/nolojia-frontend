@@ -54,12 +54,13 @@
     left: 0;
     right: 0;
     bottom: 0;
+    top: 80vh;
     background-color: rgb(13, 4, 82);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    flex-flow: column;
+    flex-flow: row;
     text-align: center;
     color: #fff;
     padding: 0 1rem;

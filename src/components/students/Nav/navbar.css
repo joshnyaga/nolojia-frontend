@@ -36,4 +36,7 @@
   .nav{
     left: 0rem;
   }
+  .right{
+    justify-content: space-between  ;
+  }
 }

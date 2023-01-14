@@ -127,6 +127,7 @@ form.sign-in-form {
 form.sign-up-form {
   z-index: 1;
   opacity: 0;
+  padding: 0;
 }
 .image {
   width: 100%;
@@ -330,6 +331,13 @@ form.sign-up-form {
   text-align: center;
 }
 @media (max-width: 824px) {
+  .signin-signup, .signup-signup {
+    
+    margin-left: -20%;
+}
+  form.sign-in-form {
+    width: 100%;
+}
   .container-auth::before {
     content: "";
     position: absolute;
@@ -358,6 +366,7 @@ form.sign-up-form {
   .signup-signup {
     left: 50%;
     top: 60%;
+    width: 100%;
   }
   .btn-xs.transparent {
     margin: 0;

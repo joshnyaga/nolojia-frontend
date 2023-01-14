@@ -26,6 +26,7 @@ const Nav = () => {
           { withCredentials: true }
         );
       } catch (error) {
+        handleLogout();
       }
     };
     checkLogin();

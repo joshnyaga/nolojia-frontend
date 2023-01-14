@@ -171,6 +171,9 @@ const Auth = () => {
             <Link to="/forgot-password" className="link-text">
               Forgot Password?
             </Link>
+            <Link to="/register" className="link-text">
+              Create account
+            </Link>
             <p className="social-text">Or sign in with social platform</p>
             <div className="social-media">
               <button onClick={signInWithGoogle} className="social-icon">
@@ -253,6 +256,9 @@ const Auth = () => {
             <button type="submit" className="btn">
               Sign up
             </button>
+            <Link to="/login" className="link-text">
+              Already have an account
+            </Link>
             <p className="social-text">Or sign up with social platform</p>
             <div className="social-media">
               <button onClick={signInWithGoogle} className="social-icon">

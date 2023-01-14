@@ -192,3 +192,9 @@ section {
 .heading.center {
   text-align: center;
 }
+@media(max-width: 630px){
+  section {
+    padding-left: 0rem;
+    padding-top: 3rem;
+  }
+}

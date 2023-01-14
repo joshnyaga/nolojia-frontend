@@ -26,7 +26,7 @@ const Ongoing = () => {
               position: "relative",
               width: "92%",
               height: "100%",
-              marginLeft: "8%",
+              marginLeft: "7%",
               marginRight: "1%",
               overflowx: "hidden",
               border: "0",

@@ -13,7 +13,7 @@ const AddSchedule = ({ setOpen }) => {
     e.preventDefault();
     console.log(input);
     const res = await axios.post(
-      `/api/nolojia/v1/schedules`,
+      `https://nolojia-backend.onrender.com/api/nolojia/v1/schedules`,
       { ...input },
       { withCredentials: true }
     );

@@ -16,7 +16,7 @@ const ViewPanel = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `/api/nolojia/v1/lessons/one/${lessonId}`,
+          `https://nolojia-backend.onrender.com/api/nolojia/v1/lessons/one/${lessonId}`,
           {
             withCredentials: true,
           }
@@ -30,7 +30,7 @@ const ViewPanel = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `/api/nolojia/v1/tasks/${lessonId}`,
+          `https://nolojia-backend.onrender.com/api/nolojia/v1/tasks/${lessonId}`,
           {
             withCredentials: true,
           }

@@ -29,7 +29,7 @@ const PasswordReset = () => {
   const handleSubmit = async () => {
     try {
       const { data } = await axios.post(
-        `/api/nolojia/v1/auth/reset/${id}/${token}`,
+        `https://nolojia-backend.onrender.com/api/nolojia/v1/auth/reset/${id}/${token}`,
         { password: password },
         { withCredentials: true }
       );

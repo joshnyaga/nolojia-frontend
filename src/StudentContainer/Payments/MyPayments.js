@@ -14,7 +14,7 @@ const MyPayments = () => {
     let count =1
     useEffect(()=>{
         const fetchPaymentDetails = async()=>{
-            const res = await axios.get(`api/nolojia/v1/payments/${currentUser._id}`, {withCredentials:true})
+            const res = await axios.get(`https://nolojia-backend.onrender.com/api/nolojia/v1/payments/${currentUser._id}`, {withCredentials:true})
             setPayments(res.data)
         }
         fetchPaymentDetails()
@@ -30,7 +30,7 @@ const MyPayments = () => {
                     success()
             navigate("/successful")
             // add the detail to database
-            await axios.post("api/nolojia/v1/payments",
+            await axios.post("https://nolojia-backend.onrender.com/api/nolojia/v1/payments",
             {
                 studentId: currentUser._id,
                 studentName: currentUser.name,

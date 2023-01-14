@@ -117,7 +117,7 @@ const Dashboard = () => {
     const fetchCourses = async () => {
       try {
         const res = await axios.get(
-          "/api/nolojia/v1/courses/tutor",
+          "https://nolojia-backend.onrender.com/api/nolojia/v1/courses/tutor",
           {
             withCredentials: true,
           }

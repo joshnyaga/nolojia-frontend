@@ -13,7 +13,7 @@ const AddTask = ({ setOpen, lessonId }) => {
     e.preventDefault();
 
     const res = await axios.post(
-      `/api/nolojia/v1/tasks/${lessonId}`,
+      `https://nolojia-backend.onrender.com/api/nolojia/v1/tasks/${lessonId}`,
       { ...input },
       { withCredentials: true }
     );

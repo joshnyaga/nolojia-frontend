@@ -8,7 +8,7 @@ const Livestream = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       const res = await axios.get(
-        "/api/nolojia/v1/rooms/active/",
+        "https://nolojia-backend.onrender.com/api/nolojia/v1/rooms/active/",
         { withCredentials: true }
       );
       setRooms(res.data);

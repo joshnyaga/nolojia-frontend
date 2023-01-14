@@ -21,7 +21,7 @@ const Navbar = () => {
     const checkLogin = async () => {
       try {
         const res = await axios.get(
-          "api/nolojia/v1/auth/loggedin",
+          "https://nolojia-backend.onrender.com/api/nolojia/v1/auth/loggedin",
           { withCredentials: true }
         );
       } catch (error) {

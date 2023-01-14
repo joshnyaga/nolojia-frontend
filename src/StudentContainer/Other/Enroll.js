@@ -100,7 +100,7 @@ const Enroll = () => {
         // call the api now
         const enrollUser = async()=>{
             try {
-                await axios.post("api/nolojia/customers/add", input)
+                await axios.post("https://nolojia-backend.onrender.com/api/nolojia/customers/add", input)
                 const success = () => toast("You have enrolled successfully");
                 success()
             } catch (error) {

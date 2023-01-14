@@ -9,7 +9,7 @@ const Schedule = () => {
   useEffect(() => {
     const fetchSchedule = async () => {
       const res = await axios.get(
-        "/api/nolojia/v1/schedules",
+        "https://nolojia-backend.onrender.com/api/nolojia/v1/schedules",
         { withCredentials: true }
       );
       setSchedules(res.data);

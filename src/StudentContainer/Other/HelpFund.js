@@ -17,7 +17,7 @@ const HelpFund = () => {
         navigate("/invalidpath")
     }
     const fetchUser = async()=>{
-        const res = await axios.get(`/api/nolojia/v1/users/${id}`, {withCredentials:true})
+        const res = await axios.get(`https://nolojia-backend.onrender.com/api/nolojia/v1/users/${id}`, {withCredentials:true})
         setUser(res.data)
     }
     fetchUser()
@@ -33,7 +33,7 @@ const HelpFund = () => {
                     success()
           
             // add the detail to database
-            await axios.post("/api/nolojia/v1/payments",
+            await axios.post("https://nolojia-backend.onrender.com/api/nolojia/v1/payments",
             {
                 studentId: id,
                 studentName: user.name,

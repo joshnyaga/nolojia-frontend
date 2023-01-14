@@ -103,7 +103,7 @@ const AddLesson = ({ setOpen }) => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `http://localhost:3001/api/nolojia/v1/lessons/${courseId}`,
+        `https://nolojia-backend.onrender.com/api/nolojia/v1/lessons/${courseId}`,
         {
           ...input,
         },

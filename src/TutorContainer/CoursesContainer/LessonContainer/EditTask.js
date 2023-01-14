@@ -13,7 +13,7 @@ const EditTask = ({ setOpen, taskId, task }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `/api/nolojia/v1/tasks/${taskId}`,
+        `https://nolojia-backend.onrender.com/api/nolojia/v1/tasks/${taskId}`,
         { ...input },
         { withCredentials: true }
       );

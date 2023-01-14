@@ -12,7 +12,7 @@ function CoursePanel() {
       try {
         setLoading(true);
         const res = await axios.get(
-          "/api/nolojia/v1/courses/students",
+          "https://nolojia-backend.onrender.com/api/nolojia/v1/courses/students",
           { withCredentials: true }
         );
         setCourses(res.data);

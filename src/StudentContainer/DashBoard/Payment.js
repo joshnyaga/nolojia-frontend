@@ -1,10 +1,13 @@
 import React from "react";
 import { FaRegWindowClose } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 import "./dashboard.css";
 const Payment = ({ setOpen, title, price }) => {
-  
-  const handlePayment = async () => {};
+  const navigate = useNavigate()
+  const handlePayment = async () => {
+    navigate("/payments")
+  };
   return (
     <div className="modal">
       <div className="modal-content">
@@ -30,7 +33,7 @@ const Payment = ({ setOpen, title, price }) => {
                 <td>Mpesa</td>
                 <td>Kenya</td>
                 <td>
-                  <button className="btn">Choose</button>
+                  <button onChange={handlePayment} className="btn">Choose</button>
                 </td>
               </tr>
               <tr>

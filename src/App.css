@@ -198,4 +198,8 @@ section {
     padding-top: 3rem;
     margin-bottom: 12vh;
   }
+  .modal-content {
+    width: 95%;
+
+  }
 }

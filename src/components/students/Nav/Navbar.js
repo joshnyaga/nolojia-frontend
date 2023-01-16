@@ -47,7 +47,7 @@ const Navbar = () => {
     <div className="nav">
       <div className="left"></div>
       <div className="right">
-        {userImg == "" ? <FaUserAlt /> : <img src={profile} alt="" />}
+        {userImg == "" ? <FaUserAlt /> : <img src={currentUser.img} alt="" />}
         <p>{userName}</p>
         <MdOutlineLogout onClick={handleLogout} />
       </div>

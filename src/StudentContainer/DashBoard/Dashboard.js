@@ -18,12 +18,8 @@ const Dashboard = () => {
             withCredentials: true,
           }
         );
-        const array = res.data;
 
-        const newArr = array.map((v) => ({ ...v, type: "all" }));
-
-        console.log(newArr);
-        setAllCourses(newArr);
+        setAllCourses(res.data);
         setLoading(false);
       } catch (error) {
         console.log(error);

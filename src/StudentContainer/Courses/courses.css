@@ -89,4 +89,7 @@
     align-items: center;
     padding: 5rem 0rem 0rem 0rem;
 }
+.course-panel {
+  flex: 1 1 20rem;
+}
 }

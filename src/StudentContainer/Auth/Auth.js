@@ -85,7 +85,7 @@ const Auth = () => {
 
         toast(res.data.message);
       } catch (error) {
-        toast(error.response.data.message);
+        toast.error(error.response.data.message);
       }
     };
     toast.promise(register, {

@@ -201,7 +201,7 @@ const Landing = () => {
   };
 
   return (
-    <>
+    <section className="dash-section">
       <ToastContainer
         position="top-right"
         autoClose={2000}
@@ -284,7 +284,7 @@ const Landing = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </section>
   );
 };
 export default Landing;

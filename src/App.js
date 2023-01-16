@@ -42,6 +42,7 @@ export default function App() {
           <Route path="assignments" element={<AssignmentsPage />} />
           <Route path="challenges" element={<ChallengesPage />} />
           <Route path="payments" element={<MyPayments />} />
+          <Route path="code" element={<Landing />} />
           <Route path="successful" element={<Successful />} />
           <Route path="error" element={<ErrorPayments />} />
           <Route path="*" element={<NotFoundPage />} />
@@ -59,7 +60,7 @@ export default function App() {
         <Route path="invalidpath" element={<InvalidPath />} />
         <Route path="helpfund/*" element={<HelpFund />} />
         <Route path="enroll" element={<Enroll />} />
-        <Route path="code" element={<Landing />} />
+        
         <Route path="login" element={<AuthPage />} />
         <Route path="verify/*" element={<EmailVerify />} />
         <Route path="password-reset/*" element={<PasswordReset />} />

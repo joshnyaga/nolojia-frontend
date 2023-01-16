@@ -32,6 +32,9 @@
 }
 .links--box {
   padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .links--box svg {
   font-size: 3rem;

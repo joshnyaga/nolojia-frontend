@@ -258,7 +258,7 @@ const Auth = () => {
             <button type="submit" className="btn">
               Sign up
             </button>
-            <Link to="/login" className="link-text">
+            <Link onClick={setMenu(!menu)} className="link-text">
               Already have an account
             </Link>
             <p className="social-text">Or sign up with social platform</p>

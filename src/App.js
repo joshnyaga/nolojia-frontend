@@ -29,6 +29,7 @@ import Enroll from "./StudentContainer/Other/Enroll";
 import HelpFund from "./StudentContainer/Other/HelpFund";
 import InvalidPath from "./StudentContainer/Other/InvalidPath";
 import Landing from "./components/code/Landing";
+import "./index.css"
 export default function App() {
   return (
     <BrowserRouter>

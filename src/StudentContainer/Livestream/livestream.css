@@ -18,3 +18,9 @@
   font-size: 3rem;
   text-align: center;
 }
+.middle {
+  width: 200px;
+  display: block;
+  margin: 5rem auto;
+  position: relative;
+}

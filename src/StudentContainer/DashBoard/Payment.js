@@ -33,7 +33,7 @@ const Payment = ({ setOpen, title, price }) => {
                 <td>Mpesa</td>
                 <td>Kenya</td>
                 <td>
-                  <button onChange={handlePayment} className="btn">Choose</button>
+                  <button onClick={handlePayment} className="btn">Choose</button>
                 </td>
               </tr>
               <tr>

@@ -52,11 +52,11 @@ form {
 }
 .input-field i {
   text-align: center;
-  line-height: 27px;
+  line-height: 55px;
   color: var(--blue);
   font-size: 1.5rem;
   position: absolute;
-  left: 50px;
+  left: 22px;
   top: -4px;
 }
 

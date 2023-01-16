@@ -5,7 +5,7 @@ const NoLiveStream = () => {
   return (
     <div>
       <section className="mainbox-livestream">
-        <div className="code-livestream">No LiveStream</div>
+        
         <div className="error-livestream">
           Currently there is no livestream. Please check the schedule to confirm
         </div>

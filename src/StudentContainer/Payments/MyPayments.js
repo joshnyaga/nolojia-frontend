@@ -5,17 +5,26 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./payments.css"
+import ReactLoading from "react-loading";
 const MyPayments = () => {
     const currentUser = useSelector((state) => state.currentUser);
     const navigate = useNavigate()
     const [amount, setAmount] = useState();
     const [number, setNumber] = useState();
     const [payments, setPayments] = useState([])
+    const [loading, setLoading] = useState(false);
     let count =1
     useEffect(()=>{
         const fetchPaymentDetails = async()=>{
+            try {
+              setLoading(true)
             const res = await axios.get(`https://nolojia-backend.onrender.com/api/nolojia/v1/payments/${currentUser._id}`, {withCredentials:true})
             setPayments(res.data)
+            setLoading(false)
+            } catch (error) {
+              toast.error("An error occurred fetching your payments")
+              setLoading(false)
+            }
         }
         fetchPaymentDetails()
     },[])
@@ -65,7 +74,9 @@ const MyPayments = () => {
                 <p>Share the following link to raise funds</p>
                 <span>nolojia.com/helpfund/{currentUser._id}</span>
             </div>
-            <table className="styled-table">
+            {loading?<div className="middle">
+          <ReactLoading type="spin" color="#101050" height={200} width={75} />
+        </div>:<table className="styled-table">
             <thead>
               <tr>
                 <th>No</th>
@@ -84,7 +95,7 @@ const MyPayments = () => {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table>}
         </section>
         <ToastContainer/>
     </div>

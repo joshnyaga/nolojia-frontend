@@ -2,21 +2,35 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./livestream.css";
+import ReactLoading from "react-loading";
+import { toast } from "react-toastify";
 const Livestream = () => {
   const [rooms, setRooms] = useState([]);
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const fetchRooms = async () => {
-      const res = await axios.get(
-        "https://nolojia-backend.onrender.com/api/nolojia/v1/rooms/active/",
-        { withCredentials: true }
-      );
-      setRooms(res.data);
+   try {
+    setLoading(true)
+    const res = await axios.get(
+      "https://nolojia-backend.onrender.com/api/nolojia/v1/rooms/active/",
+      { withCredentials: true }
+    );
+    setRooms(res.data);
+    setLoading(false)
+   } catch (error) {
+    toast.error("An error occurred while fetching rooms")
+    setLoading(false)
+   }
+      
     };
     fetchRooms();
   }, []);
   return (
     <>
+    {loading?<div className="middle">
+          <ReactLoading type="spin" color="#101050" height={200} width={75} />
+        </div>:<>
       {rooms.length > 0 ? (
         <section className="schedule">
           <br />
@@ -51,19 +65,18 @@ const Livestream = () => {
         </section>
       ) : (
         <section className="mainbox-livestream">
-          <div className="code-livestream">No LiveStream</div>
+          
           <div className="error-livestream">
             Currently there is no livestream. Please check the schedule to
             confirm
           </div>
-          <div className="guide-livestream">
-            Contact the admin incase there is an error
-          </div>
+          
           <Link to="/schedule" className="btn medium">
             Go to Schedule
           </Link>
         </section>
-      )}
+      )}</>
+}
     </>
   );
 };

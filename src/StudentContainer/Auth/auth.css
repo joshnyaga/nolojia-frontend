@@ -52,12 +52,12 @@ form {
 }
 .input-field i {
   text-align: center;
-  line-height: 55px;
+  line-height: 27px;
   color: var(--blue);
   font-size: 1.5rem;
   position: absolute;
-  left: 22px;
-  top: -4px;
+  left: 23px;
+  top: 10px;
 }
 
 .input-field input {

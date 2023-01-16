@@ -65,7 +65,7 @@ const Sidebar = () => {
           </Link>
           <Link
             to="/code"
-            className={`${pathname === "challenges" ? "active" : "link"}`}
+            className={`${pathname === "code" ? "active" : "link"}`}
           >
             <div className="links--box">
               <RiCodeBoxFill />

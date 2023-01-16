@@ -52,8 +52,8 @@ form {
 }
 .input-field i {
   text-align: center;
-  line-height: 55px;
-  color: var(--white-grey);
+  line-height: 27px;
+  color: var(--blue);
   font-size: 1.5rem;
   position: absolute;
   left: 50px;
